@@ -2,7 +2,7 @@
 
 A slack clone app demostrating rapid prototyping using [EmberJS](https://www.emberjs.com/) and [Google's Firebase](https://firebase.google.com/)
 
-By Kyriakos Toumbas, [Pixel Actions](www.pixelactions.com)
+By Kyriakos Toumbas, [Pixel Actions](http://www.pixelactions.com)
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
