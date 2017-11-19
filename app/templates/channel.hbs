@@ -1,0 +1,7 @@
+{{model.title}}
+{{#each model.messages as |msg|}}
+    <p>{{msg.text}}</p>
+{{/each}}
+
+{{new-message-form channel=model}}
+{{outlet}}
