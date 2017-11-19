@@ -1,8 +1,26 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="http://summit.hackcyprus.com/assets/img/hcs.svg" width="250" height="30">
+    Hack Slack
+  </a>
+</nav>
 <div class="container-fluid">
   <div class="row">
-    <div class="col">
-      <h1>The Summit Slack</h1>
+    <div class="col-2 sidebar">
+      <h4>Available Channels</h4>
+      <ul class="nav flex-column">
+        {{#each model as |channel|}}
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{channel.title}}</a>
+          </li>
+        {{/each}}
+      </ul>
+      <hr>
+      {{new-channel-form}}
+    </div>
+    <div class="col-10 main">
+      <h4>Channel goes here</h4>
+      {{outlet}}
     </div>
   </div>
 </div>
-{{outlet}}
