@@ -1,7 +1,8 @@
-# slack-clone
+# From 0 to Live in 30 minutes (will take an hour trying to explain)
 
 A slack clone app demostrating rapid prototyping using [EmberJS](https://www.emberjs.com/) and [Google's Firebase](https://firebase.google.com/)
 
+By Kyriakos Toumbas, [Pixel Actions](www.pixelactions.com)
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
