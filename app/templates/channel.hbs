@@ -1,8 +1,10 @@
 <h4>{{model.title}}</h4>
 <hr>
 {{#each model.messages as |msg|}}
-  {{msg.author}}: {{msg.text}}
+  <p><strong>{{msg.author}}:</strong> {{msg.text}}</p>
 {{else}}
   <h6>No messages posted yet!</h6>
 {{/each}}
+
+{{new-message-form channel=model}}
 {{outlet}}
