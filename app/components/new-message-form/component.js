@@ -3,6 +3,7 @@ import {inject as service} from '@ember/service';
 
 export default Component.extend({
   store: service(),
+  session: service(),
   channel:null,
   msgText: "",
   actions: {
@@ -13,7 +14,7 @@ export default Component.extend({
         var msg = this.get('store').createRecord('message', {
             text: msgText,
             channel: channel,
-            author: "Kyriakos"
+            author: this.get('session.currentUser.displayName')
         });
         this.set('msgText', '');
         msg.save().then(() => {

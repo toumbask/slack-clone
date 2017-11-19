@@ -5,6 +5,7 @@
 {{else}}
   <h6>No messages posted yet!</h6>
 {{/each}}
-
+{{#if session.isAuthenticated}}
 {{new-message-form channel=model}}
+{{/if}}
 {{outlet}}
