@@ -7,12 +7,14 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
-    /*
+
     firebase: {
-      apiKey: 'xyz',
-      authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
-      databaseURL: 'https://YOUR-FIREBASE-APP.firebaseio.com',
-      storageBucket: 'YOUR-FIREBASE-APP.appspot.com',
+      apiKey: "AIzaSyB6iF0bz-EMqnWOPEgPtXn88qdzdf-_uuQ",
+      authDomain: "slack-clone-8d0a5.firebaseapp.com",
+      databaseURL: "https://slack-clone-8d0a5.firebaseio.com",
+      projectId: "slack-clone-8d0a5",
+      storageBucket: "slack-clone-8d0a5.appspot.com",
+      messagingSenderId: "1065648028928"
     },
 
 
@@ -22,7 +24,7 @@ module.exports = function (environment) {
       'frame-src': "'self' https://*.firebaseapp.com",
       'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
     },
-    */
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

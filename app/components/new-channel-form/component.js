@@ -11,9 +11,11 @@ export default Component.extend({
       if (name.length < 3) {
         this.set('status', 'Channel name is too short!');
       } else {
-        this.get('store').createRecord('channel', {title: name});
+        var channel = this.get('store').createRecord('channel', {title: name});
         this.set('newChannelName', '');
+        channel.save();
       }
+
     }
   }
 });
