@@ -11,7 +11,7 @@
       <ul class="nav flex-column">
         {{#each model as |channel|}}
           <li class="nav-item">
-            <a class="nav-link" href="#">{{channel.title}}</a>
+            {{#link-to 'channel' channel.id classNames='nav-link'}}{{channel.title}}{{/link-to}}
           </li>
         {{/each}}
       </ul>
@@ -19,7 +19,6 @@
       {{new-channel-form}}
     </div>
     <div class="col-10 main">
-      <h4>Channel goes here</h4>
       {{outlet}}
     </div>
   </div>
